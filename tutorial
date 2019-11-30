@@ -46,3 +46,14 @@ Spring -
 v2.0.00
 
 https://github.com/AlicioCunha
+
+comando mais utilizado no git
+
+git status - estado atual da pasta novo arquivo criado.
+
+git add . - adicionado os novos arquivos
+
+
+git commit -m "aquivo-tutorial" - salvado no repositório remoto(git) o novo arquivos
+
+git push origin
