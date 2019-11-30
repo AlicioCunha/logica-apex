@@ -1,0 +1,88 @@
+https://github.com/AlicioCunha/logica-apex
+
+criar um novo arquivo com mensagem e enviar para o repositorio
+
+Criando um branch para melhorias
+git checkout -b feature/b1
+
+adicionar 2 arquivos novos 
+git status
+git add . -- adicionar os novos arquivos
+
+git commit -m "adicionados novos arquivos" -- salvar os arquivos
+
+git push origin -- enviar para o servidor(repositorio remoto)
+
+****esse comando o  git irá sugerir para vc
+ git push --set-upstream origin feature/b1
+
+-------------------------------------
+
+trocando(navegando entre) de branch
+git checkout [nome da branch]
+	git checkout master
+
+Criando um branch para melhorias
+git checkout -b feature/b2
+
+criar 5 arquivos
+
+git status
+git add . -- adicionar os novos arquivos
+
+git commit -m "adicionados novos arquivos" -- salvar os arquivos
+
+git push origin -- enviar para o servidor(repositorio remoto)
+
+****esse comando o  git irá sugerir para vc
+ git push --set-upstream origin feature/b2
+
+
+ -----------------
+
+ criar novo branch feature/b3, a partir do feature/b2
+ adicionar 3 arquivos e enviar ao servidor
+
+
+ trocando(navegando entre) de branch
+git checkout [nome da branch]
+	git checkout feature/b2
+
+Criando um branch para melhorias
+git checkout -b feature/b3
+
+criar 5 arquivos
+
+git status  ----lista os arquivos novos ou modificados
+git add . -- adicionar os arquivos novos ou modificados staged area
+
+git commit -m "adicionado novos arquivos" -- salvar os arquivos
+
+git push origin -- enviar para o servidor(repositorio remoto)
+
+****esse comando o  git irá sugerir para vc
+ git push --set-upstream origin feature/b
+
+----------------------
+
+Trazer as alterações da feature/b1 para master(merge)
+
+git checkout master
+
+git merge feature/b2
+
+git rebase feature/b2
+
+git push origin
+
+o resultado tem que ser o fast-foward - OK
+
+
+----------------------
+Deletando uma branch local e remoto
+git branch -l ---lista todos os branch locais
+
+git push <nome do origin> <nome do branch> --delete  --deletar branch remoto
+git push origin feature/b2 --delete
+
+git branch -d feature/b2
